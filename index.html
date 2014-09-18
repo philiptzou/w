@@ -9,6 +9,7 @@
 <a href="weibo://sendweibo?content=中文微博&imageurl=http://2.im.guokr.com/8mcfeo6GDVUDg75Q53Y0n-7OA2MoWTEV8q2TuGWaJG5KAQAA6wAAAEpQ.jpg">eeee</a>
 <script>
   function viewProfile(user_name) {
+    alert(WeixinJSBridge.invoke);
     typeof WeixinJSBridge != "undefined" && WeixinJSBridge.invoke && WeixinJSBridge.invoke("profile", {
       username: user_name,
       scene: "57"
