@@ -22,6 +22,7 @@
 		<p>
 		    <button id="optionMenu">WeixinApi.hideOptionMenu</button>
 		</p>
+		<p id="wechat"></p>
 		<p>
 		    <button id="toolbar">WeixinApi.hideToolbar</button>
 		</p>
@@ -63,7 +64,7 @@
 
 		    // optionMenu的控制
 		    addEvent('optionMenu',function(el,e){
-		    	alert(WeixinJSBridge);
+		    	document.getElementById('wechat').innerText = '' + WeixinJSBridge;
 		        if(optionMenuOn) {
 		            el.innerHTML = "WeixinApi.showOptionMenu";
 		            WeixinApi.hideOptionMenu();
@@ -175,10 +176,6 @@
 
 		</script>
 
-<script>
-  alert(window.WeixinJSBridge);
-  document.getElementById('wechat').innerText = '' + WeixinJSBridge;
-</script>
     	</body>
 </html>
 
