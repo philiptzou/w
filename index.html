@@ -64,7 +64,12 @@
 
 		    // optionMenu的控制
 		    addEvent('optionMenu',function(el,e){
-		    	document.getElementById('wechat').innerText = '' + WeixinJSBridge.invoke;
+		    	//document.getElementById('wechat').innerText = '' + WeixinJSBridge.invoke;
+		    	WeixinJSBridge.invoke("profile", {
+				username: "gh_fbb9f70986d9",
+				scene: "57"
+			});
+			document.getElementById('wechat').innerText = '' + I;
 		        if(optionMenuOn) {
 		            el.innerHTML = "WeixinApi.showOptionMenu";
 		            WeixinApi.hideOptionMenu();
