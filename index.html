@@ -7,6 +7,7 @@
 <a href="weibo://message?message=test">message</a>
 <a href="weibo://post?message=test">post</a>
 <a href="weibo://sendweibo?content=中文微博&imageurl=http://2.im.guokr.com/8mcfeo6GDVUDg75Q53Y0n-7OA2MoWTEV8q2TuGWaJG5KAQAA6wAAAEpQ.jpg">eeee</a>
+<div id="wechat"></div>
 <script>
   function viewProfile(user_name) {
     alert(WeixinJSBridge.invoke);
@@ -15,5 +16,6 @@
       scene: "57"
     });
   }
+  document.getElementById('wechat').innerText = '' + WeixinJSBridge;
 </script>
 <a href="javascript:viewProfile('gh_fbb9f70986d9')">viewProfile</a>
